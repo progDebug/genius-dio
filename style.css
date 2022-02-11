@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    border-radius: 100%;
+    background-color: white;
+    width: 600px;
+    grid-gap: 5px;
+    height: 600px;
+    position: relative;
+}
+
+.verde{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+
+.vermelho{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+.amarelo{
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+.azul{
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+.iniciar-dificuldade{
+    position: absolute;
+    width: 150px;
+    text-align: center;
+}
+.iniciar{
+    border-radius: 10px;
+    background-color: rgb(0, 255, 13);
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    font-weight: bold;
+}
+.iniciar:hover{
+    background-color: rgb(81, 205, 50);
+    cursor: pointer;
+    user-select: none;
+}
+.range{
+    width: 100%;
+}
+p.titulo{
+    text-align: left;
+    margin-bottom: 0;
+}
+input{
+    background-color: white;
+    border-radius: 5px;
+}
+.niveis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    padding: 5px;   
+}
+#playing{
+    display: none;
+}
+#iniciar-dificuldade{
+    display: initial;
+}
+.gameOver{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gameOver .titulo{
+    width: 200px;
+    margin: none;
+}
+.gameOver #h2{
+    background-color: white;
+    color: black;
+    width: 200px;
+}
+h2{
+    padding: left 10px;;
+}
